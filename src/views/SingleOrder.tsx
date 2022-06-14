@@ -33,12 +33,15 @@ const SingleOrder: React.FC = () => {
 
   const wallet = useAnchorWallet();
 
-  const candyShopRef = useRef<CandyShop>(
+const candyShopRef = useRef<CandyShop>(
     new CandyShop(
       CANDY_SHOP_CREATOR_ADDRESS,
       CANDY_SHOP_TREASURY_MINT,
       CANDY_SHOP_PROGRAM_ID,
-      NETWORK
+      NETWORK, {
+        currencyDecimals: 9,
+        currencySymbol: "$0R0R"
+      }
     )
   )
 

@@ -26,7 +26,7 @@ const CustomTokenMarketplace: React.FC = () => {
       NETWORK,
       // pass additional settings param to configure shop display
       {
-        currencySymbol: 'LQN',
+        currencySymbol: '$0R0R',
         currencyDecimals: 9,
         priceDecimals: 3,
         volumeDecimals: 1
@@ -39,7 +39,7 @@ const CustomTokenMarketplace: React.FC = () => {
       <Stat
         candyShop={candyShopRef.current}
         title={'Marketplace'}
-        description={'Candy Shop supports custom SPL tokens as currency. Just specify your token symbol and decimals.'}
+        description={'00RR0R Sh0p is the place to go to redeem your $0R0R tokens for probably more 00RR0Rs that can earn you more tokens and then ??? you win '}
         style={{ paddingBottom: 50 }}
       />
       <Orders

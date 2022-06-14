@@ -18,12 +18,15 @@ const DesContainer = styled.div`
 const Marketplace: React.FC = () => {
   const wallet = useAnchorWallet();
 
-  const candyShopRef = useRef<CandyShop>(
+const candyShopRef = useRef<CandyShop>(
     new CandyShop(
       CANDY_SHOP_CREATOR_ADDRESS,
       CANDY_SHOP_TREASURY_MINT,
       CANDY_SHOP_PROGRAM_ID,
-      NETWORK
+      NETWORK, {
+        currencyDecimals: 9,
+        currencySymbol: "$0R0R"
+      }
     )
   )
 
@@ -32,7 +35,7 @@ const Marketplace: React.FC = () => {
       <Stat
         candyShop={candyShopRef.current}
         title={'Marketplace'}
-        description={'Candy Shop is an open source on-chain protocol that empowers DAOs, NFT projects and anyone interested in creating an NFT marketplace to do so within minutes!'}
+        description={'00RR0R Sh0p is the place to go to redeem your $0R0R tokens for probably more 00RR0Rs that can earn you more tokens and then ??? you win '}
         style={{ paddingBottom: 50 }}
       />
       <Orders

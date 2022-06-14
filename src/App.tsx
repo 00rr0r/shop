@@ -74,7 +74,7 @@ const currencyOptions = [
     volumeDecimals: 1
   },
   {
-    currencySymbol: '56p',
+    currencySymbol: '0R0R',
     treasuryMint: '56pdaHboK66cxRLkzkYVvFSAjfoNEETJUsrdmAYaTXMJ',
     currencyDecimals: 9,
     priceDecimals: 2,
@@ -111,7 +111,7 @@ const App = () => {
                 <MainContainer>
                   <Routes>
                     <Route
-                      path='/'
+                      path='/candy'
                       element={(
                         <>
                           <TopNav />
@@ -125,7 +125,7 @@ const App = () => {
                       )}
                     />
                     <Route
-                      path='/marketplace/:tokenMint'
+                      path='/:tokenMint'
                       element={(
                         <>
                           <TopNav />
@@ -134,7 +134,7 @@ const App = () => {
                       )}
                     />
                     <Route
-                      path='/marketplace'
+                      path='/'
                       element={(
                         <>
                           <TopNav />

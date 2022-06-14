@@ -1,9 +1,9 @@
 /* Customize your main colors in :root variables */
 :root {
-  --main-background-color: #343a50;
+  --main-background-color: #ffffff;
   --card-background-color: #51576d;
   --card-background-lighter-color: #7a7f92;
-  --main-text-color: #f7f6f4;
+  --main-text-color: #535353;
   --title-text-color: #3cba8b;
 }
 
@@ -18,8 +18,8 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #303030;
-  color: #FFFFFF;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 code {
