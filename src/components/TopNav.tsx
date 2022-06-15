@@ -62,7 +62,7 @@ const TopNav: React.FC<TopNavProps> = ({
           <a href='https://00rr0r.com'>Home</a>
         </li>
         <li>
-          <Link to='/marketplace'>Marketplace</Link>
+          <Link to='/'>Marketplace</Link>
         </li>
         <li>
           <Link to='/sell'>Sell</Link>
